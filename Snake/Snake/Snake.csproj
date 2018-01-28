@@ -43,8 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassPoint.cs" />
+    <Compile Include="Figure.cs" />
+    <Compile Include="HorizLine.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VertLine.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -10,17 +10,26 @@ namespace Snake
     {
         static void Main(string[] args)
         {
-            ClassPoint p1 = new ClassPoint();
-            p1.x = 1;
-            p1.y = 3;
-            p1.sym = '*';
+            Console.SetBufferSize(80, 25);
+
+          
+            ClassPoint p1 = new ClassPoint(4,5,'#');
             p1.Draw();
 
-            ClassPoint p2 = new ClassPoint();
-            p2.x = 4;
-            p2.y = 5;
-            p2.sym = '#';
-            p2.Draw();
+
+            // рисуем рамку
+
+            HorizLine upline = new HorizLine(0, 78, 0, '+');
+            upline.Drow();
+            HorizLine downline = new HorizLine(0, 78, 24, '+');
+            downline.Drow();
+
+
+
+            VertLine leftline = new VertLine(0, 24, 0, '+');
+            leftline.Drow();
+            VertLine rightline = new VertLine(0, 24, 78, '+');
+            rightline.Drow();
 
             Console.ReadLine();
         }
